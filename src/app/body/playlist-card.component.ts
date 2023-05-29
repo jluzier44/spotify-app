@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component ({
     selector: "spotify-playlist-card",
@@ -6,5 +6,10 @@ import { Component } from "@angular/core";
 })
 
 export class PlaylistCardComponent {
-    
+    @Input()
+    title!: string;
+    @Input()
+    author!: string;
+    @Input()
+    imagePath!: string;
 }
