@@ -2,7 +2,8 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: "spotify-history",
-    templateUrl: "history.component.html"
+    templateUrl: "history.component.html",
+    styleUrls: ["history.component.css"]
 })
 export class HistoryComponent{
 
