@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Playlist } from "./playlist.model";
 
 @Component ({
     selector: "spotify-your-library",
@@ -6,5 +7,5 @@ import { Component } from "@angular/core";
 })
 
 export class YourLibraryComponent {
-
+    playlists:Playlist[] = [];
 }
