@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { BaseRouteReuseStrategy } from "@angular/router";
 
 @Component ({
     selector: "spotify-body",
@@ -8,5 +7,5 @@ import { BaseRouteReuseStrategy } from "@angular/router";
 })
 
 export class BodyComponent {
-    
+
 }
