@@ -5,6 +5,7 @@ import { SearchPageComponent } from './body/search-page.component';
 import { YourLibraryComponent } from './body/your-library.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: BodyComponent},
   { path: 'search', component: SearchPageComponent},
   { path: 'your_library', component: YourLibraryComponent}
