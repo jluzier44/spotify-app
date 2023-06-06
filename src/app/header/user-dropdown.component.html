@@ -1,22 +1,28 @@
 <ul class="nav navbar-dark">
     <li class="nav-item dropdown">
-        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+        <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
             <svg class="bi p-1" width="28" height="28" id="userIcon">
-                <use xlink:href="./assets/bootstrap-icons.svg#person-fill"/>
+                <use xlink:href="./assets/bootstrap-icons.svg#person-fill" />
             </svg>
             User Name
         </a>
         <ul class="dropdown-menu dropdown-menu-dark">
             <li>
-                <a class="dropdown-item" href="#">
-                    Account
-                    <svg class="bi p-1" width="24" height="24" id="dropdownArrow">
-                        <use xlink:href="./assets/bootstrap-icons.svg#box-arrow-up-right"/>
-                    </svg>
+                <a routerLink="/account" routerLinkActive="active" class="nav-link text-white">
+                    <a class="dropdown-item" href="#">
+                        Account
+                        <svg class="bi p-1" width="24" height="24" id="dropdownArrow">
+                            <use xlink:href="./assets/bootstrap-icons.svg#box-arrow-up-right" />
+                        </svg>
+                    </a>
                 </a>
             </li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li>
+                <a routerLink="/profile" routerLinkActive="active" class="nav-link text-white">
+                    <a class="dropdown-item" href="#">Profile</a>
+                </a>
+            </li>
             <li><a class="dropdown-item" href="#">Logout</a></li>
         </ul>
     </li>

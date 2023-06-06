@@ -15,6 +15,8 @@ import { SidebarPlaylistComponent } from './sidebar/sidebar-playlist.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PlaylistCardComponent } from './body/playlist-card.component';
+import { AccountComponent } from './body/account.component';
+import { ProfileComponent } from './body/profile.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PlaylistCardComponent } from './body/playlist-card.component';
     LayoutMainComponent,
     SearchPageComponent,
     YourLibraryComponent,
-    PlaylistCardComponent
+    PlaylistCardComponent,
+    AccountComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
