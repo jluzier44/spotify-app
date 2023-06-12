@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BodyComponent } from './body/body.component';
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PlaylistCardComponent } from './body/playlist-card.component';
 import { AccountComponent } from './body/account.component';
 import { ProfileComponent } from './body/profile.component';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +36,13 @@ import { ProfileComponent } from './body/profile.component';
     YourLibraryComponent,
     PlaylistCardComponent,
     AccountComponent,
-    ProfileComponent
+    ProfileComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
