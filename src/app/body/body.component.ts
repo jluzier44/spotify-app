@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { BodyService } from "./body.service";
 import { Playlist } from "./playlist.model";
 
@@ -14,7 +14,7 @@ export class BodyComponent {
     constructor(private bodyService: BodyService) {
     }
 
-    ngOninit(): void {
+    ngOnInit(): void {
         console.log("Populating playlist data.");
         this.showPlaylist();
     }
@@ -22,8 +22,11 @@ export class BodyComponent {
     showPlaylist() {
         this.bodyService.getPlaylist().subscribe((data: Playlist []) => {
             console.log(data);
+            var i = 0;
             for (var item in data) {
                 console.log(data[item]);
+                this.playlists[i] = data[item];
+                i++;
             }
         })
     }

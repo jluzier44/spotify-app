@@ -4,7 +4,7 @@ import { Playlist } from "./playlist.model";
 
 @Injectable({providedIn: 'root'})
 export class BodyService {
-    private playlistUrl:string = 'https://spotify-app-f29aa-default-rtdb.firebaseio.com/playlists'
+    private playlistUrl:string = 'https://spotify-app-f29aa-default-rtdb.firebaseio.com/playlists.json';
     
     constructor(private http: HttpClient) {
 
