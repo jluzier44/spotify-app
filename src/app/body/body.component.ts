@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { mock_playlists } from "./mock-playlist";
+import { BodyService } from "./body.service";
 import { Playlist } from "./playlist.model";
 
 @Component ({
@@ -9,12 +9,22 @@ import { Playlist } from "./playlist.model";
 })
 
 export class BodyComponent {
-    playlists:Playlist[] = [];
+    playlists: Playlist [] = [];
 
-    constructor() {
-        for (var playlist of mock_playlists) {
-            this.playlists.push(new Playlist(playlist));
-        }
+    constructor(private bodyService: BodyService) {
     }
 
+    ngOninit(): void {
+        console.log("Populating playlist data.");
+        this.showPlaylist();
+    }
+
+    showPlaylist() {
+        this.bodyService.getPlaylist().subscribe((data: Playlist []) => {
+            console.log(data);
+            for (var item in data) {
+                console.log(data[item]);
+            }
+        })
+    }
 }
