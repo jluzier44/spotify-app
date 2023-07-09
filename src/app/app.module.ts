@@ -19,6 +19,7 @@ import { PlaylistCardComponent } from './body/playlist-card.component';
 import { AccountComponent } from './body/account.component';
 import { ProfileComponent } from './body/profile.component';
 import { UserInfoComponent } from './header/user-info.component';
+import { SidebarLibraryButtonsComponent } from './sidebar/sidebar-library-buttons/sidebar-library-buttons.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { UserInfoComponent } from './header/user-info.component';
     PlaylistCardComponent,
     AccountComponent,
     ProfileComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    SidebarLibraryButtonsComponent
   ],
   imports: [
     BrowserModule,

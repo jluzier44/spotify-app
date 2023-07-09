@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { BodyService } from "./body.service";
 import { Playlist } from "./playlist.model";
 
