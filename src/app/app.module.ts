@@ -23,6 +23,9 @@ import { SidebarLibraryButtonsComponent } from './sidebar/sidebar-library-button
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { EditUserInfoComponent } from './body/edit-user-info.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -42,12 +45,15 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
     AccountComponent,
     ProfileComponent,
     UserInfoComponent,
-    SidebarLibraryButtonsComponent
+    SidebarLibraryButtonsComponent,
+    EditUserInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'spotify-webapp'),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideDatabase(() => getDatabase())
   ],
