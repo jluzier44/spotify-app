@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "spotify-app-f29aa": {
+      "hosting": {
+        "spotify-app": [
+          "spotify-app-f29aa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "spotify-app-f29aa"
+  }
+}
